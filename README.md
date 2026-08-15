@@ -21,10 +21,10 @@ The application captures an empty background using a webcam, detects the person 
 
 ## 🛠️ Tech Stack
 
-- **Python**
-- **OpenCV**
-- **MediaPipe**
-- **NumPy**
+- Python
+- OpenCV
+- MediaPipe
+- NumPy
 
 ### Computer Vision Concepts Used
 
@@ -46,12 +46,12 @@ The project combines human segmentation and gesture recognition to create a real
 2. The user leaves the camera frame.
 3. The application captures the empty background.
 4. The user enters the camera frame.
-5. MediaPipe Pose Landmarker detects the person and generates a segmentation mask.
+5. MediaPipe detects the person and generates a segmentation mask.
 6. The segmentation mask identifies the region occupied by the person.
-7. The detected person region is replaced with the corresponding region from the previously captured background.
+7. The detected person region is replaced with the previously captured background.
 8. MediaPipe Gesture Recognizer detects the user's hand gesture.
-9. An **Open Palm** activates the invisibility effect.
-10. A **Closed Fist** returns the user to visible mode.
+9. An Open Palm activates the invisibility effect.
+10. A Closed Fist returns the user to visible mode.
 
 ### Gesture Flow
 
@@ -67,11 +67,6 @@ Invisibility Mode ON
 Invisibility Mode OFF
       ↓
 👤 Person becomes visible
----
-
-## 📂 Project Structure
-
-```text
 Invisibility-Mode/
 │
 ├── models/
@@ -83,50 +78,20 @@ Invisibility-Mode/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-## ⚙️ Installation
-
-### 1. Clone the repository
-
-```bash
 git clone YOUR_GITHUB_REPOSITORY_URL
 cd Invisibility-Mode
 python -m venv venv
 venv\Scripts\Activate.ps1
 pip install -r requirements.txt
----
-
-## 📦 Required MediaPipe Models
-
-The project uses MediaPipe model files for:
-
-- Human pose and segmentation
-- Hand gesture recognition
-
-Place the required `.task` model files inside:
-
-```text
 models/
----
-
-## ▶️ How to Run
-
-Make sure the virtual environment is activated.
-
-Run the application:
-
-```powershell
 python main.py
 Background captured!
 Now ENTER the frame.
----
-
-## 🎮 Controls
-
-| Gesture / Key | Action |
-|---|---|
-| ✋ Open Palm | Activate Invisibility Mode |
-| ✊ Closed Fist | Return to Visible Mode |
-| Q | Exit the application |
+| Gesture / Key | Action                     |
+| ------------- | -------------------------- |
+| ✋ Open Palm   | Activate Invisibility Mode |
+| ✊ Closed Fist | Return to Visible Mode     |
+| Q             | Exit the application       |
 ---
 
 ## 🎥 Demo
@@ -145,8 +110,6 @@ The demonstration will show:
 
 ## 📸 Screenshots
 
-## 📸 Screenshots
-
 ### 👤 Visible Mode
 
 The user is normally visible in the webcam feed.
@@ -158,12 +121,6 @@ The user is normally visible in the webcam feed.
 The detected person is replaced by the previously captured background.
 
 ![Invisibility Mode](invisibility-mode.png)
-
-### 💻 Project Structure
-
-The VS Code project structure and important project files.
-
-*Screenshot will be added here.*
 ---
 
 ## 🚀 Future Improvements
