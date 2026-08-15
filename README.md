@@ -145,17 +145,19 @@ The demonstration will show:
 
 ## 📸 Screenshots
 
+## 📸 Screenshots
+
 ### 👤 Visible Mode
 
 The user is normally visible in the webcam feed.
 
-*Screenshot will be added here.*
+![Visible Mode](visible-mode.png)
 
 ### 🫥 Invisibility Mode
 
 The detected person is replaced by the previously captured background.
 
-*Screenshot will be added here.*
+![Invisibility Mode](invisibility-mode.png)
 
 ### 💻 Project Structure
 
