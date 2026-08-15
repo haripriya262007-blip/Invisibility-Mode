@@ -55,7 +55,7 @@ The project combines human segmentation and gesture recognition to create a real
 
 ### Gesture Flow
 
-```text
+text
 ✋ Open Palm
       ↓
 Invisibility Mode ON
